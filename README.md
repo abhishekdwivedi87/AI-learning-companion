@@ -59,8 +59,8 @@ You need Node.js, npm, a MongoDB database, and a Gemini API key.
    The frontend uses the local backend at `http://127.0.0.1:5000`.
 
 4. Open `http://localhost:5000/` to check that the backend is running. It
-   returns a JSON status message. The detailed health endpoint is available at
-   `http://localhost:5000/api/health`.
+   displays a plain-text status message. The detailed health endpoint is
+   available at `http://localhost:5000/api/health`.
 
 ## Notes
 
