@@ -43,6 +43,10 @@ app.use(express.text({
 }));
 app.use(express.raw({ type: "application/pdf", limit: "50mb" }));
 
+app.get("/", (req, res) => {
+  res.json({ status: "ok", message: "Backend is running successfully." });
+});
+
 app.get("/api/health", (req, res) => {
   res.json({ status: "ok", textModel: textModelName, embeddingModel: embeddingModelName });
 });
